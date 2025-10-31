@@ -1,0 +1,11 @@
+# Ignore results and artifacts
+results/
+*.ckpt
+*.pt
+*.h5
+*.log
+*.tmp
+.DS_Store
+.ipynb_checkpoints/
+__pycache__/
+.env
