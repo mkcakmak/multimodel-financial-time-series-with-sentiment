@@ -1,0 +1,133 @@
+# --- BUSINESS / FINANCIAL DICTIONARY 
+
+FIN = {
+    "de": (
+        r"(uebernahm|uebernimmt|uebernahme|fusion|verkauf|"
+        r"kauf|gewinn|verlust|umsatz|ertrag|prognose|guidance|dividende|"
+        r"auftrag|bestellung|vertrag|investition|ipo|boerse|aktie|kurs|"
+        r"quartal|geschaeftsjahr|bilanz|marge|cash ?flow|rating|"
+        r"anleihe|refinanzierung|generalversammlung|verwaltungsrat|"
+        r"vr|geschaeftsleitung|ceo|cfo|sparte|bereich|abspaltung|"
+        r"holding|notierung|kotierung|gewinnwarnung|stellenabbau|"
+        r"personalabbau|ueberkapazitaet|fusioniert|uebernimmt|"
+        r"reingewinn|umsatzwachstum|marktanteil|export|konjunktur|"
+        r"bundesbank|snb|nationalbank|zins|zinspolitik|inflation|"
+        r"gdp|wirtschaftswachstum|"
+        # --- business / operations ---
+        r"unternehmen|firma|konzern|tochter|tochtergesellschaft|"
+        r"joint[- ]venture|kooperation|partnerschaft|allianz|"
+        r"lieferkette|supply[- ]?chain|werk|fabrik|standort|"
+        r"produktion|produktionslinie|kapazitaet|kapazitäts|"
+        r"ausbau|hochfahren|skalierung|verlagerung|verlagerungs|"
+        r"produkteinfuehrung|produkteinführung|markteinfuehrung|markteinführung|"
+        r"produktlaunch|produktstart|portfolio|strategie|strategisch|"
+        r"lizenz|lizenzierung|lizenzvertrag|kooperationsvertrag|"
+        r"absichtserklaerung|absichtserklärung|mou|loi|"
+        r"auftragseingang|auftragsbestand|backlog|ausschreibung|tender|"
+        # --- innovation / R&D ---
+        r"patent|schutzrecht|geistiges eigentum|ip|"
+        r"innovation|innovations|forschung|entwicklung|f&e|r&d|"
+        r"prototyp|pilotprojekt|technologie|ki|ai|robotik|automatisierung)"
+    ),
+
+    "fr": (
+        r"(acquisition|rachat|cession|fusion|vente|achat|benefice|perte|"
+        r"chiffre d'affaires|revenu|marge|dividende|commande|contrat|"
+        r"investissement|introduction en bourse|ipo|bourse|action|cours|"
+        r"trimestre|exercice|rapport annuel|perspectives|flux de tresorerie|"
+        r"notation|obligation|refinancement|assemblee generale|"
+        r"conseil d'administration|scission|secteur|filiale|filiales|"
+        r"restructuration|reduction d'effectifs|plan social|"
+        r"banque nationale suisse|bns|taux d'interet|inflation|"
+        r"croissance economique|"
+        # --- business / operations ---
+        r"entreprise|societe|société|groupe|coentreprise|joint[- ]venture|"
+        r"partenariat|alliance|chaine d'approvisionnement|chaîne d'approvisionnement|"
+        r"supply[- ]?chain|usine|site|implantation|production|"
+        r"ligne de production|capacite|capacité|augmentation de capacité|extension|"
+        r"lancement de produit|mise sur le marche|mise sur le marché|"
+        r"portefeuille|strategie|stratégie|licence|licensing|accord de licence|"
+        r"accord de partenariat|protocole d'accord|mou|loi|"
+        r"prise de commande|carnet de commandes|backlog|appel d'offres|"
+        # --- innovation / R&D ---
+        r"brevet|propriete intellectuelle|propriété intellectuelle|pi|"
+        r"innovation|recherche|developpement|développement|r&d|"
+        r"prototype|projet pilote|technologie|ia|robotique|automatisation)"
+    ),
+
+    "en": (
+        r"(acquisition|merger|divesti|spin[- ]off|sale|buy|profit|loss|"
+        r"revenue|earnings|ebit|margin|guidance|dividend|order|contract|"
+        r"investment|ipo|listing|exchange|stock|share|price|quarter|"
+        r"annual report|outlook|cash ?flow|bond|refinanc|rating|capital "
+        r"(raise|market)|buyback|share repurchase|board|agm|subsidiary|"
+        r"mergers and acquisitions|layoffs|swiss national bank|interest rate|inflation|"
+        # --- business / operations ---
+        r"company|firm|corporation|conglomerate|subsidiary|"
+        r"joint[- ]venture|partnership|alliance|"
+        r"supply[- ]?chain|factory|plant|site|facility|"
+        r"production|manufactur|assembly line|capacity|ramp[- ]?up|scale[- ]?up|"
+        r"relocation|footprint|product (launch|release|introduction)|"
+        r"go[- ]to[- ]market|portfolio|strategy|strategic|license|licensing|licence|"
+        r"partnership agreement|memorandum of understanding|mou|letter of intent|loi|"
+        r"order intake|order backlog|backlog|tender|request for proposal|rfp|"
+        # --- innovation / R&D ---
+        r"patent|ip|intellectual property|innovation|research and development|"
+        r"research|development|r&d|prototype|pilot project|technology|"
+        r"ai|artificial intelligence|robotics|automation)"
+    ),
+
+    "it": (
+        r"(acquisizione|fusione|cessione|vendita|acquisto|utile|perdita|"
+        r"ricavi|fatturato|margine|dividendo|ordine|contratto|"
+        r"investimento|ipo|borsa|azione|prezzo|trimestre|bilancio|"
+        r"relazione annuale|flusso di cassa|obbligazione|rifinanziamento|"
+        r"rating|aumento di capitale|assemblea generale|cda|scissione|filiale|"
+        r"riduzione del personale|banca nazionale svizzera|tasso di interesse|inflazione|"
+        # --- business / operations ---
+        r"impresa|azienda|societa|società|gruppo|controllata|joint[- ]venture|"
+        r"partenariato|alleanza|catena di fornitura|supply[- ]?chain|"
+        r"stabilimento|impianto|sede|produzione|linea di produzione|capacita|capacità|"
+        r"aumento di capacita|aumento di capacità|espansione|lancio (di prodotto)?|"
+        r"introduzione sul mercato|go[- ]to[- ]market|portafoglio|strategia|strategico|"
+        r"licenza|licensing|accordo di partenariato|memorandum d'intesa|mou|"
+        r"lettera di intenti|loi|acquisizione ordini|portafoglio ordini|backlog|"
+        r"gara|appalto|"
+        # --- innovation / R&D ---
+        r"brevetto|proprieta intellettuale|proprietà intellettuale|pi|"
+        r"innovazione|ricerca|sviluppo|ricerca e sviluppo|r&d|"
+        r"prototipo|progetto pilota|tecnologia|ia|intelligenza artificiale|"
+        r"robotica|automazione)"
+    ),
+}
+
+
+
+# --- NON-BUSINESS / NON-FINANCIAL DICTIONARY 
+
+NON = {
+    "de": (
+        r"(geboren|gestorben|nachruf|museum|ausstellung|kultur|musik|sport|"
+        r"verein|jubilaeum|schule|universitaet|kirche|gemeinde|fest|feier|"
+        r"portrait|biografie|wetter|unfall|brand|politik|gemeinderat|kanton|"
+        r"strasse|verkehr|bauprojekt|wohnhaus|schueler|freizeit|tierpark)"
+    ),
+    "fr": (
+        r"(ne|decede|necrologie|musee|exposition|culture|musique|sport|"
+        r"association|jubile|ecole|universite|eglise|commune|fete|ceremonie|"
+        r"portrait|biographie|meteo|accident|incendie|politique|commune|"
+        r"rue|circulation|chantier|immeuble|etudiant|loisir|zoo)"
+    ),
+    "en": (
+        r"(born|died|obituary|museum|exhibition|culture|music|sport|club|"
+        r"anniversary|school|university|church|festival|ceremony|portrait|"
+        r"biography|weather|accident|fire|politics|parliament|community|"
+        r"street|traffic|construction|housing|education|leisure|animal park)"
+    ),
+    "it": (
+        r"(nato|morto|necrologio|museo|mostra|cultura|musica|sport|"
+        r"associazione|anniversario|scuola|universita|chiesa|festa|cerimonia|"
+        r"ritratto|biografia|meteo|incidente|incendio|politica|comune|"
+        r"strada|traffico|cantiere|edificio|studenti|tempo libero|zoo)"
+    ),
+}
